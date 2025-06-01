@@ -1,10 +1,12 @@
 import os
 import sys
 from typing import Union, Literal
-
-import gradio as gr
 import tempfile
 
+# Import compatibility shim for distutils on Python 3.12+
+import distutils_compat
+
+import gradio as gr
 from openai import OpenAI
 from dotenv import load_dotenv
 
